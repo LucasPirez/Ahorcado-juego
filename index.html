@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="imagen/logo.png" />
+    <canvas id="canvas" height="370" width="300"> </canvas>
+    <div class="contenedor_inicio" id="contenedorInicio">
+      <button class="iniciar_juego" id="iniciarJuego">iniciar juego</button>
+      <button class="nueva_palabra" id="nuevaPalabra">Nueva Palabra</button>
+    </div>
+    <div class="contenedor_juego" id="contenedorJuego">
+      <h3 id="perdedor" class="perdedor ganar">Perdiste</h3>
+      <h3 id="ganador" class="ganar">
+        Ganaste,
+        <br />
+        Felicidades!!
+      </h3>
+
+      <div id="contenedor_palabra" class="contenedor"></div>
+      <div id="errada" class="contenedor_errada"></div>
+      <div class="contenedor_button_nuevoJuego">
+        <button class="nuevo_juego" id="nuevoJuego">Nuevo juego</button>
+        <button class="nueva_palabra" id="desistir">Desistir</button>
+      </div>
+    </div>
+    <div class="contenedor_nueva" id="contenedorNueva">
+      <input type="text" placeholder="Ingrese una palabra" />
+      <h6>Maximo 10 letras</h6>
+      <div class="contenedor_button-palabraNueva">
+        <button class="guardar_nueva" id="guardarNueva">
+          Guardar y empezar
+        </button>
+        <button class="nueva_palabra" id="cancelar">Cancelar</button>
+      </div>
+    </div>
+
+    <button id="mostrarTeclado" class="nueva_palabra teclado">Teclado</button>
+
+    <div id="teclado" class="contenedor_teclado"></div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
